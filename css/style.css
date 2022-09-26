@@ -1,0 +1,252 @@
+
+body {
+    background-color: white;
+    width: 1000px;
+    margin: 0 auto;
+    font-family: 'Charis SIL', serif;
+    padding: 20px;     
+  }
+header {
+    text-align: center; 
+    background-color: #03045e;
+    color:white;
+    padding:15px;
+    margin:10px;
+  }
+  h1{
+    text-align: center;
+  }
+  .headerwrapper{
+    display:grid;
+    grid-template-columns: 1fr 20fr;
+    grid-gap:10px;
+  }
+   .logo{
+    width: 50px;
+    margin-top: auto;
+  }
+  
+  .logo img{
+    width: 100%;
+  } 
+
+  /* navigation */
+  nav{
+    background-color: #f7e7d9; 
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+nav a{
+    font-size: 20px; 
+    font-weight: bold; 
+    color: black;
+    text-decoration: none; 
+    padding: 0 30px; 
+}
+
+nav ul{ 
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav>ul>li{ 
+    display: inline-block; 
+    position: relative; 
+}
+
+nav ul li ul { /* applies styles only to the sub menu */
+	width: 200px;
+	position: absolute; /* put the sub menu in a separate layer */
+	z-index: 999; /* make sure the sub menu is not hidden behind other elements */
+	text-align: left;
+	background-color: #f7e7d9;
+    box-shadow: 0 0 5px black;
+}
+
+nav ul li ul li a{ /* styles for the <a> in the sub menu */
+    color: black;
+    padding: 10px;
+    display: block; /* to make sure the anchor tags occupy all the space available otherwise the hover colour changes do not have a good user experience. */
+}
+
+nav ul li ul li:hover a:hover{ /* styles for the <a> in the sub menu on mouse over */
+    color: #890417;
+    background-color: #d4a373;
+}
+
+nav ul li ul { /* applies styles only to the sub menu */
+    display: none; /* hide the sub menu by default */
+}
+
+nav ul li:hover ul{/* applies styles only to the sub menu whose parent <li> is hovered */
+    display: block; /* show the sub menu when a user brings their mouse over the parent <li> */
+}
+
+/* hero image */
+.hero{
+    position: relative; /* to make this div the relative ancestor of .herotext */
+    text-align: center; /* to center all the content in .hero */
+    padding:10px;
+}
+.herotext{
+    position: absolute; /* make .herotext content sit in a separate layer over the image */
+    top: 0; /* make the .herotext cover the entire area of .hero from top */
+    bottom: 0; /* to bottom */
+    left: 0; /* and left */
+    right:0; /* right, so that the entire image is overlayed */
+    padding:20px;
+    color: #fbeeef; /* change the text colour */
+    font-family: sans-serif; /* make the font appear in sans-serif */
+    font-weight: bold; /* make the text bold */
+}
+.herotext h2{
+    color: white; /* change the colour of the heading in .herotext */
+}
+img{
+    width: 100%; /* make the image go all the way from left to the right */
+}
+
+.grid{
+    display : grid;
+    grid-row-gap : 0;
+    grid-column-gap : 30px;
+    margin:30px 0;
+}
+.grid1
+{            
+    grid-template-columns: 1fr;
+    text-align: center;
+}  
+.grid2
+{
+    display:grid;
+    grid-gap:20px;
+    grid-template-areas: 
+    "box2 box1"
+    "box3 box4"
+    ;
+}
+#box1{
+    grid-area: box1;
+}
+#box2{
+    grid-area: box2;
+}
+#box3{
+    grid-area: box3;
+}
+#box4{
+    grid-area: box4;
+}
+.clip1{
+    clip-path: polygon(75% 0%, 100% 50%, 89% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+.clip2{
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 7% 100%, 0% 50%, 25% 0%);
+}
+.cards{
+    box-shadow: 0 0 10px #0077b6;
+    padding: 20px;
+    border-radius: 10px;
+}
+.cards img{
+    width: 100%;
+} 
+.grid3
+{            
+    grid-template-columns: 1fr 1fr 1fr;            
+}  
+.cardtitle,.formtitle h2{
+    text-align: center;
+}
+.travelinfo{
+    display:grid;
+    grid-gap:10px;
+    grid-template-areas: 
+    "menu1 menu2 menu3"
+    ;
+    margin:0 10px;
+}
+.travelbutton {
+	background-color: #dda15e; 
+	color: black; 
+	display: inline-block; 
+	width: 120px; 
+	font-size: 20px; 
+	border: 2px solid black; 
+	text-decoration: none; 
+	padding: 10px;
+}
+.travelbutton:hover{
+    font-style: italic;
+}
+.travelinfo ul{   
+        list-style-type: none;     
+}
+/* inner */
+.destination{
+    grid-template-columns: 1fr 1fr;
+}
+video{
+    max-width: 100%;
+}
+.video_wrapper{
+    position: relative;
+}
+.tabledata{
+    width:600px;
+    margin:auto;
+    font-size: 18px;
+    padding:20px 20px;
+}
+table, td, th{
+    border: 2px solid white;
+    background-color: #ade8f4;
+}
+table{
+    border-collapse: collapse;
+}
+td, th{
+    padding: 5px 10px;
+}
+.contact form{
+    width:800px;
+    margin:auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #0077b6;
+    padding: 20px;
+    border-radius: 10px;
+}
+.field_wrapper{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 10px;
+    padding:10px;
+    margin: 10px 0;
+}
+.submit{
+    padding: 20px;
+    margin-top: 9px;
+}
+.submit div{
+    margin: 0 0 10px 0;
+}
+.submit button{
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+  footer {
+    text-align: center;
+    background-color: #03045e;
+    color: white;
+    padding:10px;
+    font-weight: bold;
+  }
+
+  footer ul li a{
+  color:white;
+  }

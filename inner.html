@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <section class="headerwrapper">
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo">
+            <!-- Logo created using https://hatchful.shopify.com/ -->
+        </div>
+        <h1>Travel</h1>
+    </section>
+      </header>
+      <nav>
+        <!-- First level UL for the main -->
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="">Destinations</a>
+                 <!-- Second level UL for the sub menu -->
+                 <ul>
+                    <li><a href="#video">Scuba</li></a>
+                    <li><a href="#table">Data</li></a>
+                    <li><a href="#contact">Contact</li></a>
+                </ul>
+            </li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <img src="images/underwater.jpg" alt="School of Fish in Body of Water">
+         <!-- Image underwater.jpg from pexels [March 11th, 2020] School of Fish in Body of Water
+https://www.pexels.com/photo/school-of-fish-in-body-of-water-3854025/ -->
+              <div class="herotext">
+              <h2>Destinations</h2>
+              </div>
+            </div>
+          <section class="grid destination">
+           <div>
+            <h2>Scuba Diving</h2>
+            <p>Scuba Diving is one of the most interesting activity. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi debitis sint ipsam maxime fugiat accusamus dolor pariatur quibusdam quas ab veniam velit eaque, repellat repudiandae maiores dolorem deleniti minus placeat!Lorem<br><br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quas sint vel excepturi, nobis eius natus! Ipsum ullam maiores amet, error vel iure dolorum accusantium iusto nostrum iste dicta quod!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum sunt corrupti quis distinctio eos? Eius reprehenderit unde repellendus culpa, aperiam sapiente doloremque nemo rem minus. Voluptates maiores vel fugiat magni!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+           <div class="video_wrapper" id="video">
+            <video autoplay muted controls
+            poster="video/fish.png" src="video/ocean.mp4">
+            </video>
+        </div>
+           <div>
+           </div>
+          </section>
+          <section class="tabledata" id="table">
+            <table>
+                 <!--Destination Ontario.(1999).Who we Are| Destination Ontario.https://www.destinationontario.com/en-ca/corporate/who-we-are-->
+                <thead>
+                    <tr>
+                        <th>Destination</th>
+                        <th>Accomodation</th>
+                        <th>Activity</th>
+                        <th>Contact</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vancouver</td>
+                        <td>Homestay</td>
+                        <td>Attractions & Theme Parks</td>
+                        <td>John</td>
+                        <td>+12345672345</td>
+                    </tr>
+                    <tr>
+                        <td>Ottawa</td>
+                        <td>Homestay</td>
+                        <td>Galleries</td>
+                        <td>John</td>
+                        <td>+12345672345</td>
+                    </tr>
+                    <tr>
+                        <td>Toronto</td>
+                        <td>Resort</td>
+                        <td>Museums</td>
+                        <td>Dan</td>
+                        <td>+14562453678</td>
+                    </tr>
+                    <tr>
+                        <td>Quebec</td>
+                        <td>Resort</td>
+                        <td>Spas & Retreats</td>
+                        <td>Dan</td>
+                        <td>+14562347865</td>
+                    </tr>
+                </tbody>
+            </table>
+          </section>
+          <div class="formtitle">
+            <h2>Contact Information</h2>
+          </div>
+          <section class="contact" id="contact">
+            <form>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <div class="field_wrapper">
+                        <label for="username">Name</label>
+                        <input type="text"   id="username" name="username">
+                      </div>
+                    <div class="field_wrapper">
+                      <label for="useremail">Email</label>
+                       <input type="email"  id="useremail" name="useremail">
+                    </div>
+                    <div class="field_wrapper">
+                      <label for="userphone">Phone</label>
+                       <input type="tel"  id="userphone" name="userphone">
+                    </div>
+                    <div class="field_wrapper">
+                        <label for="event_venue">Venue</label>
+                        <select name="event_venue" id="event_venue">
+                        <optgroup label="Venue">
+                            <option value="Kitchener">Kitchener</option> 
+                            <option value="Waterloo">Waterloo</option> 
+                            <option value="Toronto">Toronto</option> 
+                        </optgroup>
+                        </select>
+                    </div>
+                    <fieldset>
+                        <legend>Transport</legend>
+                    <div class="radio_wrapper">
+                        <input type="radio" name="wedding" id="destination_wedding" value="Destination">
+                        <label for="destination_wedding">Destination Wedding</label>
+                    </div>
+                   
+                    <div class="radio_wrapper">
+                        <input type="radio" name="wedding" id="cruise_wedding" value="cruise">
+                        <label for="cruise_wedding">Cruise Wedding</label>
+                    </div>
+    
+                    <div class="radio_wrapper">
+                        <input type="radio" name="wedding" id="church_wedding" value="church">
+                        <label for="church_wedding">Church Wedding</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Packages</legend>
+                <div>
+                    <input type="checkbox" name="packageone" id="packageone" value="Above 500000">
+                    <label for="packageone">Above 500000</a></label>
+                </div>
+               
+                <div>
+                    <input type="checkbox" name="packagetwo" id="packagetwo" value="200000 - 300000">
+                    <label for="packagetwo">200000 - 300000</a></label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="packagethree" id="packagethree" value="Below 100000">
+                    <label for="packagethree">Below 100000</a></label>
+                    </div>
+            </fieldset>
+                </fieldset>
+
+                <div class="submit">
+                    <div>
+                         <input type="checkbox" name="terms" id="terms" value="Yes">
+                         <label for="terms">I Agree to the Terms and Conditions</label>
+                    </div>                    
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+                
+            </form>
+          </section>
+          <footer>
+            <section class="travelinfo">
+              <div id="menu1">
+              <h2>Contact</h2>
+              <ul>
+                <li><a href="#">Email:travel@ontario.com</a></li>
+                <li><a href="#">Phone:+18796754324</a></li>
+                <li><a href="#">Office:+1234567890</a></li>
+              </ul>
+            </div>
+            <div id="menu2">
+              <h2>Timings</h2>
+              <ul>
+                <li><a href="index.html">Mon:8am - 6pm</a></li>
+                <li><a href="index.html">Tue:8am - 6pm</a></li>
+                <li><a href="index.html">Wed:9am - 5pm</a></li>
+              </ul>
+              </div>
+              <div id="menu3">
+              <h2>Holidays</h2>
+              <ul>
+                <li><a href="index.html">Friday</a></li>
+                <li><a href="index.html">Saturday</a></li>
+                <li><a href="index.html">Sunday</a></li>
+              </ul>
+            </div>
+            </section>
+            <p>&copy; LakshmiPriya Hari</p>
+          </footer>
+    
+</body>
+</html>
